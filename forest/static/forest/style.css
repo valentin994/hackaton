@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,body{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: #666b6a;
+}
+
+main{
+   margin: auto;  
+}
+
+.container{
+    text-align: center;
+    color:white;
+}
+
+.container a{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    display: block;
+    background: #1AB188;
+    padding: 10px 40px;
+}
+
+.losi{
+    height: 200px;
+    padding: 10px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: #24323D;
+    border-radius: 10px;
+    box-shadow:0 4px 10px 4px rgb(67, 70, 69);
+}
+
+.btn{
+   text-align: center;
+   display: flex;
+   justify-content: center;
+}
+.btn a:nth-child(2){
+    background: rgb(38, 131, 106);
+    color: rgb(202, 202, 202);
+}
+
+.btn a:nth-child(1):hover{
+    background: rgb(46, 158, 128);
+}
+
+.btn a:nth-child(2):hover{
+    background: rgb(53, 196, 158);
+    color: white;
+}
+
+.loginform{
+    padding: 10px 35px;
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+    justify-content: space-around;
+    background: #24323D;
+    border-radius: 10px;
+    box-shadow:0 4px 10px 4px rgb(67, 70, 69);
+}
+
+.loginform form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 120px;
+    font-size: 24px;
+}
+
+.loginform button{
+    width: 50%;
+    margin:auto;
+    padding: 10px 40px;
+    border: none;
+    background: #1AB188;
+    color: white;
+    font-size: 20px;
+}
+
+.loginform button:hover{
+    background: rgb(46, 158, 128);
+}
+
+.sidenav{
+    height: 100%;
+    width: 300px;
+    background: #24323D;
+    box-shadow:0 4px 10px 4px rgb(67, 70, 69);
+    position: absolute;
+    left: 0;
+    top:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.logo{
+    padding: 50px 0;
+}
+
+.sidenav li a{
+    transition: background 0.5 ease;
+    background: #24323D;
+    font-size: 24px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center
+}
+
+.sidenav li a:hover{
+    background: #1AB188;
+   
+}
+
+.sidenav li a i{
+    height: 100%;
+    border: 3px solid transparent;
+}
+
+.sidenav p a i{
+    border: 3px solid transparent;
+}

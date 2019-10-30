@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+{% if user.is_authenticated %}
+<div class="sidenav">
+  <div class="logo"><h1>LOGO</h1></div>
+  <ul>
+      <li><a href="#"><i class="material-icons">
+          map
+          </i> Map</a></li>
+      <li><a href="#"><i class="material-icons">
+          account_box
+          </i>Account</a></li>
+      <li><a href="#"><i class="material-icons">
+          settings_applications
+          </i>Settings</a></li>
+    </ul>
+    <p>{{ user.username }}</p>
+    <p><a href="{% url 'logout' %}"><i class="material-icons">
+        exit_to_app
+        </i>logout</a></p>
+</div>  
+{% else %}
+<div class="losi">
+  <h1>You are not logged in</h1>
+  <div class="btn">
+ <a href="{% url 'login' %}">Login</a>
+ <a href="{% url 'signup'%}">Sign in</a>
+  </div>
+{% endif %}
+</div>
+{% endblock %}
